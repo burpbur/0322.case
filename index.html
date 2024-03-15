@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- =========header 開始 -->
+    <header class="clearfix">
+        <h1 class="float-left">
+            剪刀石頭布
+        </h1>
+
+        <nav class="float-left">
+            <!-- ul>li*3>a{item$} {item$$$}代表預設文字  $代表數字-->
+            <ul class="clearfix">
+                <li class="float-left text-center"><a href="index.html"><i class="fa-regular fa-face-smile"></i>簡單</a></li>
+                <li class="float-left text-center"><a href="hell.html"><i class="fa-solid fa-ghost"></i>地獄</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- =========header 結束 -->
+    <!-- ===============規則開始================= -->
+    <div class="btn-block">
+        <button class="btn"  id="rules-btn" type="button" >規則簡介</button>
+    </div>
+    <div class="bg-texture clearfix">
+        <h2 class="col-12 float-left text-center">規則</h2>
+        <div class="rules-container">
+            <br>
+            <ul>
+                <li class>代碼1===> 剪刀</li>
+                <li class>代碼2===> 石頭</li>
+                <li class>代碼3===> 布</li>
+            </ul>
+        </div>
+        <!-- ===============規則結束================= -->
+
+        <!-- ================================= -->
+        <label>請輸入代碼:</label>
+        <input type="text" id="ge" value="3" placeholder="1~3">
+        <button  class="btn" onclick="searchGesture()">出拳!!!</button>
+    </div>
+    <p id="msgP">玩家:</p>
+    <p id="msgC">電腦:</p>
+    <p id="res"></p>
+
+    <!-- =======頁尾====== -->
+    <footer>
+        <div class="container-footer">
+           <p> <!-- &bsnp; HTML特殊字元 -->
+            僅作為作業練習使用  請勿作為商業用途.
+            <br> 
+            Copyright © All rights reserved.ABC123
+            </p>
+        </div>
+    </footer>
+
+    <!-- ===============JSJSJS================= -->
+    <script src="./script.js">
+       
+    </script>
+
+
+</body>
+
+</html>
